@@ -11,11 +11,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.fragment.app.FragmentActivity
+import com.braintreepayments.api.ClientTokenCallback
+import com.braintreepayments.api.ClientTokenProvider
+import com.braintreepayments.api.DropInClient
 import dev.matsem.braintreerepro.ui.theme.BraintreeReproTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val dropInClient = DropInClient(this) { TODO("Not yet implemented") }
+
         enableEdgeToEdge()
         setContent {
             BraintreeReproTheme {

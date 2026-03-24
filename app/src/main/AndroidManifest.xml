@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BraintreeRepro">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -22,6 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Uncomment this to get disable startup provider and get to the root cause stack trace -->
+<!--        <provider-->
+<!--            android:name="androidx.startup.InitializationProvider"-->
+<!--            android:authorities="${applicationId}.androidx-startup"-->
+<!--            tools:node="remove" />-->
+
     </application>
 
 </manifest>
