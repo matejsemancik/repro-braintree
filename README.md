@@ -1,6 +1,6 @@
 # BrainTree Drop-In startup crash repro
 
-This is minimum reproducible sample for crash that happens at app startup with latest BrainTree Drop-In SDK and AGP 9 and Kotlin 2.3.0 only on minified builds.
+This is minimum reproducible sample for crash that happens at app startup with latest BrainTree Drop-In SDK and AGP 9 only on minified builds.
 
 - Install and run `debug` build and observe no crash
 - Install and run `release` build type and observe crash at startup
